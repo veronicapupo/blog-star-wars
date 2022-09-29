@@ -1,13 +1,32 @@
 import React from 'react';
+import {Typography, Grid, Button} from '@material-ui/core';
 import './Home.css';
+import { Box } from '@mui/material';
 
 
 function Home() {
-return (
-    <>
-        <h1 className= "titulo">Home</h1>
-        <img src="https://lumiere-a.akamaihd.net/v1/images/cg_starwars_skywalkersaga_mobile_20370_7b5e45d9.jpeg?region=0,20,640,360" alt="Imagem Tela Inicial" className="img"/>
-    </>
-);
+    return (
+        <>
+            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "black" }}>
+                <Grid alignItems="center" item xs={6}>
+                    <Box paddingX={20} >
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Welcome</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}> to the dark side!</Typography>
+                    </Box>
+                    <Box display="flex" justifyContent="center">
+                        <Box marginRight={1}>
+                        </Box>
+                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "red", color: "white" }}>Ver Postagens</Button>
+                    </Box>
+                </Grid>
+                <Grid item xs={6} >
+                    <img src="https://epipoca.com.br/wp-content/uploads/2022/06/darth-vader-obi-wan-kenobi-05062022-1200x900.jpg" alt="" width="700px" height="500px" />
+                </Grid>
+                <Grid xs={12} style={{ backgroundColor: "black" }}>
+                </Grid>
+            </Grid>
+        </>
+    );
 }
+
 export default Home;
