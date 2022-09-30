@@ -1,0 +1,17 @@
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.textos1{
+    font-weight: bold !important;
+    }
+
+ .imagem{
+   
+        background-image: url(https://pm1.narvii.com/6514/845631f9d9719a0b13230171187edf57e218a764_hq.jpg);
+        background-repeat: no-repeat;
+        width: 100vh;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+ }   

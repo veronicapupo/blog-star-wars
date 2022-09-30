@@ -1,0 +1,14 @@
+.header-container {
+   
+    background-color: black !important;  
+   }
+   
+   .text-decorator-none{
+    text-decoration: none;
+}
+
+.cursor{
+cursor: pointer;
+color: white
+
+}

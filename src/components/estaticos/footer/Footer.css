@@ -1,0 +1,23 @@
+.header-container {
+   
+    background-color: black !important;  
+   }
+
+.box1{
+    background-color: black !important;
+     height: 120px;
+}
+
+.redes{
+    font-size: 60px !important;
+     color: white;
+}
+
+.box2{
+   background-color: black !important;
+    height: 60px;
+}
+
+.textos{
+    color: white;
+}
