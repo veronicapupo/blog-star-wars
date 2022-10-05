@@ -6,3 +6,11 @@
    
     background-color: black !important;  
    }
+
+   .btnDeletar{
+    background-color: red !important;
+}
+
+.btnAtualizar {
+    background-color: rgb(0, 174, 255) !important;
+}
