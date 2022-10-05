@@ -6,7 +6,7 @@ import { Box } from '@mui/material';
 import User from '../../model/User';
 import { cadastroUsuario } from '../../service/Service';
 import './CadastroUsuario.css';
-import { updateModuleBlock } from 'typescript';
+
 
 
 function CadastroUsuario() {
