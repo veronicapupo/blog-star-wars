@@ -21,7 +21,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://epipoca.com.br/wp-content/uploads/2022/06/darth-vader-obi-wan-kenobi-05062022-1200x900.jpg" alt="" width="700px" height="500px" />
+                    <img src="https://i.pinimg.com/originals/41/5d/15/415d15a93f65bb9e44b2dc05b912cb7d.gif" alt="" width="700px" height="500px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
