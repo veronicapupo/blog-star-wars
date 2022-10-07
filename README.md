@@ -4,15 +4,18 @@
 
 
 
-Projeto De Blog Front-end que faz ligação com o Back-end.
+Projeto de Blog Front-end que faz integração com o [Back-End](https://blogpessoal-0xzb.onrender.com/swagger-ui/index.html)
 O usuário deve se cadastrar, para logar e ter acesso ao site, podendo fazer postagens e incluir temas sugeridos para futuras postagens.
-O Blog contém os componentes Home, Cadastro, Login, Navbar, Footer.
-Os componentes postagem e temas CRUD get post put delete, que mapeiam o site.
 
+O Blog contém os componentes : 
 
-
-
-
+* Home
+* Cadastro
+* Login
+* Navbar
+* Footer
+* Postagem 
+* Temas
 
 
 # Getting Started with Create React App
