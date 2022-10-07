@@ -1,3 +1,20 @@
+
+![image](https://user-images.githubusercontent.com/105063311/194661394-89eb636e-cf12-46ff-bbce-4b512be5c583.png)
+
+
+
+
+Projeto De Blog Front-end que faz ligação com o Back-end.
+O usuário deve se cadastrar, para logar e ter acesso ao site, podendo fazer postagens e incluir temas sugeridos para futuras postagens.
+O Blog contém os componentes Home, Cadastro, Login, Navbar, Footer.
+Os componentes postagem e temas CRUD get post put delete, que mapeiam o site.
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
