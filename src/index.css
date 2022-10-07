@@ -1,8 +1,10 @@
 * {
-  font-family:'Star Jedi', arial !important;
+  font-family: 'Star Jedi V1','Times New Roman', Times, serif !important
 }
 
-
+input{
+  font-family: 'Arial' !important
+}
 
 body {
   margin: 0;

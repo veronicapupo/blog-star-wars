@@ -33,4 +33,4 @@ function TabPostagem() {
     </>
   );
 }
-export default TabPostagem
+export default TabPostagem;

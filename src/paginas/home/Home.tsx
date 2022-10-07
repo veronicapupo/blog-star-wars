@@ -17,7 +17,7 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        <Button variant="outlined" className='botao'> P^stagens</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
