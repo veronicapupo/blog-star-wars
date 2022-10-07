@@ -1,11 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Typography, Grid, Button} from '@material-ui/core';
 import './Home.css';
 import { Box } from '@mui/material';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+import { useNavigate } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
 
 
 function Home() {
+
+        let navigate = useNavigate();
+        
+        const [token, setToken] = useLocalStorage('token');
+        
+    
+        useEffect(() => {
+            if (token == "") {
+                alert("Você precisa estar logado")
+                navigate("/login")
+        
+            }
+        }, [token])
+    
     return (
         <>
                 <Grid  container direction="row" justifyContent="center" alignItems="center"  className='caixa'>
@@ -16,12 +33,13 @@ function Home() {
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
+                            <ModalPostagem />
                         </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        <Button variant="outlined" className='botao'> P^stagens</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://i.pinimg.com/originals/41/5d/15/415d15a93f65bb9e44b2dc05b912cb7d.gif" alt="" width="700px" height="500px" />
+                    <img src="https://www.pocosja.com.br/divirta-se/wp-content/uploads/2015/12/star-wars.jpg" alt="" width="700px" height="500px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
@@ -31,5 +49,6 @@ function Home() {
         </>
     );
 }
+
 
 export default Home;
