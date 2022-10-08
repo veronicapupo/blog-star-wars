@@ -1,18 +1,20 @@
-.caixa{
-    background-color: black
+.caixa {
+  background-color: black;
 }
 
-.titulo{
-    color: white !important;
-    font-weight: bold;
+.titulo {
+  color: white !important;
+  font-weight: bold;
 }
 
-.botao{
-     border-color: white !important;
-      background-color:red !important; 
-      color: white !important; 
+.botaoHome {
+  line-height: 0 !important;
+  border-color: white !important;
+  background-color: red !important;
+  color: white !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
-.postagens{
-    background-color: black !important;
+.postagens {
+  background-color: black !important;
 }

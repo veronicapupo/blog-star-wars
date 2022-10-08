@@ -1,8 +1,13 @@
-.titulo{
-    font-weight: bold;
- }
+.tab-sobre {
+      color: white !important;
+      font-weight: bold;
+    }
 
- .header-container {
-   
-    background-color: black !important;  
-   }
+.header-container {
+  background-color: black !important;
+}
+
+.MuiTab-wrapper{
+   font-size:20px !important;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}

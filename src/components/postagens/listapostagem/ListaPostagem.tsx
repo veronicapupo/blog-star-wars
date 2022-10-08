@@ -44,10 +44,10 @@ function ListaPostagem() {
                 <Typography color="textSecondary" gutterBottom>
                   Postagens
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography className='tituloPostagem' component="h2" variant='h5'>
                   {post.titulo}
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography className='textoPostagem' variant="body2" component="p">
                   {post.texto}
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -59,14 +59,14 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                      <Button variant="contained" className='btnAtualizar' size='small' >
                         atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
+                      <Button variant="contained" className='btnDeletar' size='small'>
                         deletar
                       </Button>
                     </Box>

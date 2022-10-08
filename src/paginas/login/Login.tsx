@@ -64,7 +64,7 @@ function Login() {
                         <Box marginTop={2} textAlign='center'>
                             
                                 <Button className="botao" type='submit' variant='contained' color='primary'>
-                                    L0gar
+                                Fazer Login
                                 </Button>
                             
                         </Box>

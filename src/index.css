@@ -1,14 +1,26 @@
-* {
-  font-family: 'Star Jedi V1','Times New Roman', Times, serif !important
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+label,
+p,
+li{
+  font-family: "Star Jedi V1", "Times New Roman", Times, serif !important;
 }
 
-input{
-  font-family: 'Arial' !important
+
+
+
+input {
+  font-family: "Arial" !important;
 }
 
 body {
   margin: 0;
-  
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
