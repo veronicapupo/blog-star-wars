@@ -1,13 +1,34 @@
 .tab-sobre {
-      color: white !important;
-      font-weight: bold;
-    }
+  color: white !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tab-sobre-items {
+  color: white !important;
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-items: center;
+  justify-content: space-around !important;
+  gap: 35px;
+
+}
 
 .header-container {
   background-color: black !important;
 }
 
-.MuiTab-wrapper{
-   font-size:20px !important;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+.MuiTab-wrapper {
+  font-size: 20px !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.imagem3 {
+  background-image: url(https://i.gifer.com/1DvF.gif);
+  background-repeat: no-repeat;
+  width: 70vh;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
 }
