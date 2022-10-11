@@ -6,6 +6,7 @@ import Tema from '../../../model/Tema';
 import { Box } from '@mui/material';
 import useLocalStorage from 'react-use-localstorage';
 import {busca} from '../../../service/Service';
+import { toast } from 'react-toastify';
 
 function ListaTema() {
 
@@ -16,7 +17,16 @@ function ListaTema() {
 
   useEffect(()=>{
     if(token == ''){
-      alert("Você precisa estar logado")
+      toast.error('Você precisa estar logado!',{
+        position: 'top-right',
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+    });
       navigate("/login")
     }
   }, [token])
@@ -37,7 +47,7 @@ function ListaTema() {
     <>
     {
       temas.map(tema =>(
-      <Box m={2} >
+      <Box m={2} key ={tema.id} >
         <Card variant="outlined">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
@@ -52,14 +62,14 @@ function ListaTema() {
 
               <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                  <Button variant="contained"  className='btnAtualizar' size='small' >
                     atualizar
                   </Button>
                 </Box>
               </Link>
               <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" size='small' color="secondary">
+                  <Button variant="contained" size='small' className='btnDeletar'>
                     deletar
                   </Button>
                 </Box>

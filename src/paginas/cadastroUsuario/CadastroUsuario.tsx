@@ -6,6 +6,7 @@ import { Box } from '@mui/material';
 import User from '../../model/User';
 import { cadastroUsuario } from '../../service/Service';
 import './CadastroUsuario.css';
+import { toast } from 'react-toastify';
 
 
 
@@ -55,9 +56,27 @@ function CadastroUsuario() {
         if (confirmarSenha === user.senha && user.senha.length >= 8) {
           try {
             await cadastroUsuario('usuarios/cadastrar', user, setUserResult);
-            alert('Usuário criado com sucesso. Efetue seu login! ');
+            toast.success('Usuário cadastrado com sucesso!',{
+                position: 'top-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
           } catch (error) {
-            alert('Falha ao cadastrar o usuário. Por favor, confira os campos');
+            toast.error('Dados inconsistentes. Favor verificar as informações de cadastro!',{
+                position: 'top-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
           }
         } else {
           alert(
@@ -78,7 +97,7 @@ function CadastroUsuario() {
                         <TextField required value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>)=> updatedModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal'fullWidth />
                         <TextField required value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>)=> updatedModel(e)} id='foto' label='foto (url)' variant='outlined' name='foto' margin='normal' fullWidth />
                         <TextField required value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>)=> updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-                        <TextField required value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>)=> confirmarSenhaHandle(e)} id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
+                        <TextField required value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>)=> confirmarSenhaHandle(e)} id='confirmarSenha' label='confirmar-senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
                                 <Button variant='contained' color='secondary' className='btnCancelar'>

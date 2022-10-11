@@ -7,10 +7,24 @@
     background-color: black !important;  
    }
 
-   .btnDeletar{
+.btnDeletar{
     background-color: red !important;
+    color: white !important;
 }
 
 .btnAtualizar {
     background-color: rgb(0, 174, 255) !important;
+    color: white !important;
+
+}
+
+.tituloPostagem{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: larger;
+    font-weight: bold
+}
+
+.textoPostagem{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: larger;
 }

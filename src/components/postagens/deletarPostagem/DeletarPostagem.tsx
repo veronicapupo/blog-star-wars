@@ -5,6 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Postagem from '../../../model/Postagem';
 import { buscaId, deleteId } from '../../../service/Service';
 import useLocalStorage from 'react-use-localstorage';
+import { toast } from 'react-toastify';
 
 
 function DeletarPostagem() {
@@ -15,7 +16,16 @@ function DeletarPostagem() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+          toast.error('Você precisa estar logado!',{
+            position: 'top-right',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
             navigate("/login")
     
         }
@@ -42,7 +52,16 @@ function DeletarPostagem() {
                 'Authorization': token
               }
             });
-            alert('Postagem deletada com sucesso');
+            toast.success('Postagem deletada com sucesso!',{
+              position: 'top-right',
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: false,
+              theme: "colored",
+              progress: undefined,
+          });
           }
         
           function nao() {
@@ -66,12 +85,12 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+              <Button onClick={sim} variant="contained" size='large' className='btnDeletar'>
                 Sim
               </Button>
               </Box>
               <Box>
-              <Button  onClick={nao} variant="contained" size='large' color="secondary">
+              <Button  onClick={nao} variant="contained" size='large' className='btnAtualizar'>
                 Não
               </Button>
               </Box>
