@@ -6,6 +6,7 @@ import Tema from '../../../model/Tema';
 import { Box } from '@mui/material';
 import useLocalStorage from 'react-use-localstorage';
 import {busca} from '../../../service/Service';
+import { toast } from 'react-toastify';
 
 function ListaTema() {
 
@@ -16,7 +17,16 @@ function ListaTema() {
 
   useEffect(()=>{
     if(token == ''){
-      alert("Você precisa estar logado")
+      toast.error('Você precisa estar logado!',{
+        position: 'top-right',
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+    });
       navigate("/login")
     }
   }, [token])

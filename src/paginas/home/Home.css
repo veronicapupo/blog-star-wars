@@ -5,16 +5,21 @@
 .titulo {
   color: white !important;
   font-weight: bold;
-}
+  }
 
 .botaoHome {
-  line-height: 0 !important;
+
   border-color: white !important;
   background-color: red !important;
   color: white !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  
 }
 
 .postagens {
   background-color: black !important;
+}
+
+.text-decoration{
+  text-decoration: none;
 }
