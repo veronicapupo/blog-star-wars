@@ -55,7 +55,7 @@ function ListaPostagem() {
             <Card variant="outlined">
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
-                  Postagens
+                  Posts
                 </Typography>
                 <Typography className='tituloPostagem' component="h2" variant='h5'>
                   {post.titulo}
@@ -73,14 +73,14 @@ function ListaPostagem() {
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
                       <Button variant="contained" className='btnAtualizar' size='small' >
-                        atualizar
+                      update
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" className='btnDeletar' size='small'>
-                        deletar
+                      delete
                       </Button>
                     </Box>
                   </Link>

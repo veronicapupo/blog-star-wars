@@ -41,20 +41,15 @@ function Home() {
                 <Grid  container direction="row" justifyContent="center" alignItems="center"  className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'> <img
-                src="https://imagensemoldes.com.br/wp-content/uploads/2020/06/Imagem-Obi-Wan-Star-Wars-PNG.png"
-                alt=""
-                width="700px"
-                height="450px"
-              /></Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'> </Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Welcome </Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>to the dark side! </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
                         <Link to="/posts" className='text-decoration'>
-                        <Button href='/posts'  variant="outlined" className='botaoHome'>Ver postagens</Button>
+                        <Button href='/posts'  variant="outlined" className='botaoHome'>see post</Button>
                         </Link>
                     </Box>
                 </Grid>

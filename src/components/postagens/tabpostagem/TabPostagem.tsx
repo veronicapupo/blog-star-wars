@@ -27,8 +27,8 @@ function TabPostagem() {
             value={false}
             onChange={handleChange}
           >
-            <Tab label="Todas as postagens" value="1" />
-            <Tab label="Sobre-nós" value="2" />
+            <Tab label="all posts" value="1" />
+            <Tab label="about Us" value="2" />
           </Tabs>
         </AppBar>
         <TabPanel value="1">
@@ -44,19 +44,15 @@ function TabPostagem() {
             align="center"
             className="tab-sobre"
           >
-            Sobre-nós
+            About uS
           </Typography>
           <Box className="tab-sobre-items">
               <Typography variant="h5">
-                Nesta página Jedis e Mandalorianos são Bem vindos! inserção de
-                temas e Postagens relacionadas a todo conteúdo que envolve a
-                galáxia também! Se você apoia a Aliança Rebelde ou o Lado
-                Sombrio Da Força deixe sua opinião! Muitas das verdades que
-                temos dependem de nosso ponto de vista! (Yoda). Esteja
-                consciente de seus pensamentos. Eles traem você. (Obi Wan).
-                Sabe, não importa o quanto brigamos, eu sempre odiei ver você
-                partir! (Princesa Léia). Agora a diversão vai começar! (Anakin
-                Skywalker)
+              oN this page, those who wish to conquer the galaxy using the dark side of the force are welcome!
+                iNsertion of themes and posts related to all content that involves the universe of star wars too!
+                iF you support the galactic empire and all the sith lords, leave your opinion!
+            
+                "The Dark Side of the Force is a pathway to many abilities some consider to be unnatural." (Palpatine)
               </Typography>
               <img
                 src="https://i.gifer.com/1DvF.gif"

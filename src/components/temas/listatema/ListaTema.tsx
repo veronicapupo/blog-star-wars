@@ -51,7 +51,7 @@ function ListaTema() {
         <Card variant="outlined">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Tema
+              Theme
             </Typography>
             <Typography variant="h5" component="h2">
               {tema.descricao}
@@ -63,14 +63,14 @@ function ListaTema() {
               <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
                   <Button variant="contained"  className='btnAtualizar' size='small' >
-                    atualizar
+                  update
                   </Button>
                 </Box>
               </Link>
               <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
                   <Button variant="contained" size='small' className='btnDeletar'>
-                    deletar
+                    delete
                   </Button>
                 </Box>
               </Link>

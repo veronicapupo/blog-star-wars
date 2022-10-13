@@ -52,21 +52,21 @@ function Navbar() {
             <Link to="/posts" className='text-decorator-none'>
             <Box mx={1} className='cursor'>
                 <Typography variant="h6" color="inherit">
-                    postagens
+                    posts
                 </Typography>
             </Box>
             </Link>
             <Link to="/temas" className='text-decorator-none'>
             <Box mx={1} className='cursor'>
                 <Typography variant="h6" color="inherit">
-                    temas
+                themes
                 </Typography>
             </Box>
             </Link>
             <Link to="/formularioTema" className='text-decorator-none'>
             <Box mx={1} className='cursor'>
                 <Typography variant="h6" color="inherit">
-                    cadastrar-tema
+                register-theme
                 </Typography>
             </Box>
             </Link>
