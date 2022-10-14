@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 
+
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
   let navigate = useNavigate();
@@ -50,48 +51,51 @@ function ListaPostagem() {
   return (
     <>
       {
-        posts.map(post => (
-          <Box m={2} >
-            <Card variant="outlined">
-              <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  Posts
-                </Typography>
-                <Typography className='tituloPostagem' component="h2" variant='h5'>
-                  {post.titulo}
-                </Typography>
-                <Typography className='textoPostagem' variant="body2" component="p">
-                  {post.texto}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  {post.tema?.descricao}
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5}>
-
-                  <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                    <Box mx={1}>
-                      <Button variant="contained" className='btnAtualizar' size='small' >
-                      update
-                      </Button>
+            posts.map(post => (
+              <Box m={2} >
+                <Card variant="outlined">
+                  <CardContent>
+                    <Typography color="textSecondary" gutterBottom>
+                      Posts
+                    </Typography>
+                    <Typography className='tituloPostagem' component="h2" variant='h5'>
+                      {post.titulo}
+                    </Typography>
+                    <Typography className='textoPostagem' variant="body2" component="p">
+                      {post.texto}
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                      {post.tema?.descricao}
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                Postado por: {post.user?.nome}
+              </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Box display="flex" justifyContent="center" mb={1.5}>
+    
+                      <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                        <Box mx={1}>
+                          <Button variant="contained" className='btnAtualizar' size='small' >
+                          update
+                          </Button>
+                        </Box>
+                      </Link>
+                      <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+                        <Box mx={1}>
+                          <Button variant="contained" className='btnDeletar' size='small'>
+                          delete
+                          </Button>
+                        </Box>
+                      </Link>
                     </Box>
-                  </Link>
-                  <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" className='btnDeletar' size='small'>
-                      delete
-                      </Button>
-                    </Box>
-                  </Link>
-                </Box>
-              </CardActions>
-            </Card>
-          </Box>
-        ))
-      }
-    </>
-  )
-}
-
-export default ListaPostagem;
+                  </CardActions>
+                </Card>
+              </Box>
+            ))
+          }
+        </>
+      )
+    }
+    
+    export default ListaPostagem;

@@ -44,7 +44,7 @@ function TabPostagem() {
             align="center"
             className="tab-sobre"
           >
-            About uS
+            
           </Typography>
           <Box className="tab-sobre-items">
               <Typography variant="h5">

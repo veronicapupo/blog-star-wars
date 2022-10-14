@@ -70,6 +70,13 @@ function Navbar() {
                 </Typography>
             </Box>
             </Link>
+            <Box mx={1} className="cursor">
+              <Link to='/perfil' className="navLink">
+              <Typography variant="h6" color="inherit">
+                Perfil
+              </Typography>
+              </Link>
+            </Box>
             <Link to='/login' className='text-decorator-none'>
             <Box mx={1} className='cursor' onClick={goLogout}>
                 <Typography variant="h6" color="inherit">

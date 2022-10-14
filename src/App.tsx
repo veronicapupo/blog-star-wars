@@ -16,6 +16,7 @@ import { Provider } from "react-redux";
 import store from "./store/store";
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Perfil from "./components/perfil/Perfil";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/perfil" element={<Perfil />} />
           <Route path="/cadastroUsuario" element={<CadastroUsuario />} />
           <Route path="/temas" element={<ListaTema />} />
           <Route path="/posts" element={<ListaPostagem />} />
