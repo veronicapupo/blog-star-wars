@@ -7,6 +7,9 @@ import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../model/Postagem';
 import { busca, buscaId, post, put } from '../../../service/Service';
 import { toast } from 'react-toastify';
+import User from '../../../model/User';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { useSelector } from 'react-redux';
 
 function CadastroPost() {
     let navigate = useNavigate();
@@ -31,6 +34,10 @@ function CadastroPost() {
         }
     }, [token])
 
+    const userId = useSelector<TokenState, TokenState['id']>(
+        (state) => state.id
+      )
+
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
@@ -40,13 +47,23 @@ function CadastroPost() {
         id: 0,
         titulo: '',
         texto: '',
-        tema: null
-    })
+        tema: null,
+        user: null
+    });
+
+    const [user, setUser] = useState<User>({
+        id: +userId,
+        nome: '',
+        usuario: '',
+        senha: '',
+        foto: ''
+      })
 
     useEffect(() => { 
         setPostagem({
             ...postagem,
-            tema: tema
+            tema: tema,
+            user: user
         })
     }, [tema])
 

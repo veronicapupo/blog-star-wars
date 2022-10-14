@@ -1,16 +1,17 @@
-.caixa {
+.caixa{
   background-color: black;
 }
 
 .titulo {
   color: white !important;
   font-weight: bold;
+  
   }
 
 .botaoHome {
 
   border-color: white !important;
-  background-color: red !important;
+  background-color: black !important;
   color: white !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   
